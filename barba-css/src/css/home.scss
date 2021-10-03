@@ -1,0 +1,14 @@
+/* Page load animation */
+.barba-once {
+  opacity: 0;
+}
+
+.barba-once-active {
+  transition: opacity 3s linear 0.3s;
+}
+
+.barba-once-to {
+  opacity: 1;
+}
+
+/* Slide to home */
