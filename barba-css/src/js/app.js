@@ -8,7 +8,14 @@ barba.use(barbaCss);
 barba.init({
   transitions: [
     {
-      once(){}
+      name: 'home',
+      beforeOnce(){
+        console.log('beforeOnce');
+      },
+      once(){},
+      afterOnce() {
+        console.log('afterOnce');
+      }
     }
   ]
 });
