@@ -32,6 +32,18 @@ barba.init({
       },
       leave(){},
       enter(){}
+    },
+    {
+      name: 'clip',
+      to: {
+        namespace: ['clip']
+      },
+      sync: true, // permet d'avoir le container actuel et suivant
+      leave(){},
+      enter(){},
+      beforeEnter() {
+        console.log('beforeEnter');
+      }
     }
   ]
 });
