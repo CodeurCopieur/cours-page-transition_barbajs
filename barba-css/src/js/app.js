@@ -17,13 +17,13 @@ barba.init({
   transitions: [
     {
       name: 'home',
-      beforeOnce(){
-        console.log('beforeOnce');
+      to: {
+        namespace: ['home']
       },
+      sync: true, // permet d'avoir le container actuel et suivant
       once(){},
-      afterOnce() {
-        console.log('afterOnce');
-      }
+      leave(){},
+      enter(){},
     },
     {
       name: 'fade',
