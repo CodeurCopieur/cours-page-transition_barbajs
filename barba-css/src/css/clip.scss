@@ -12,7 +12,7 @@
 }
 
 .clip-enter {
-  Clip-path: circle(0%);
+  clip-path: circle(0%);
 }
 
 .clip-enter-active {
@@ -23,5 +23,5 @@
 }
 
 .clip-enter-to {
-  Clip-path: circle(75%);
+  clip-path: circle(75%);
 }
